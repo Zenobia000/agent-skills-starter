@@ -1,0 +1,44 @@
+# `.claude/` 是專案核心，必須進版控。只忽略個人與執行期狀態。
+.claude/settings.local.json
+.claude/taskmaster-data/
+.claude/sessions/
+.claude/worktrees/
+
+# 本機秘密
+.env
+.env.*
+!.env.example
+!.env.*.example
+.mcp.json
+secrets/
+*.key
+*.pem
+*.p12
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / build
+node_modules/
+dist/
+build/
+.next/
+
+# Claude workflow 暫存；正式 spec 放 docs/specs/，產品 code 不放這裡。
+.scratch/
+
+# 編輯器、作業系統與暫存檔
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+tmp/
+*.tmp
+*.bak
+*.log
